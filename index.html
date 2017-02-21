@@ -78,6 +78,9 @@
             padding-top: 10px;
             padding-bottom: 10px;
         }
+        .table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th{
+            text-align: center;
+        }
     </style>
 
     <body data-spy="scroll" data-target="#navigation" data-offset="120">
@@ -132,19 +135,19 @@
                     <div class="container">
                         <div class="row">
 
-                            <h1 data-animate="fadeInDown">Hello World!</h1>
-                            <p  class="message" data-animate="fadeInUp">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back.</p>
+                            <h1 data-animate="fadeInDown">Travel Now</h1>
+                            <p class="message" data-animate="fadeInUp">One’s destination is never a place, but always a new way of seeing things.</p>
 
 
                             <div class="col-md-6 col-md-offset-3" data-animate="fadeInUp">
                                 <form action="#" method="post" id="frm-landingPage1" class="form">
                                     <div class="input-group">
 
-                                        <input type="text" class="form-control" placeholder="your email address" name="email" id="frm-landingPage1-email" required value="">
+                                        <input type="text" class="form-control" placeholder="" name="email" id="frm-landingPage1-email" required value="">
 
                                         <span class="input-group-btn">
                                             <a class="btn btn-default" href="#section1">
-                                                Submit
+                                                Search
                                             </a>
                                         </span>
 
@@ -152,7 +155,7 @@
                                     <!-- /input-group -->
                                 </form>
 
-                                <p class="text-small">We will not sell or give your email to anyone. Promise.</p>
+                                <p class="text-small">Travel makes one modest, you see what a tiny place you occupy in the world.</p>
                             </div>
 
                         </div>
@@ -171,11 +174,48 @@
                     <div class="col-md-12">
                         <!-- <h2 class="title" data-animate="fadeInDown">Why Bootstrapious?</h2> -->
 
-                        <p class="lead">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. </p>
+                        <!-- <p class="lead">Flights</p> -->
 
-                        <div class="row services">
-
-                            <div class="col-md-4" data-animate="fadeInUp">
+                        <div class="row services" style="margin-top: 20px;">
+                            <table class="table table-hover"> 
+                                <thead> 
+                                    <tr> 
+                                        <th>Name</th> 
+                                        <th>From</th> 
+                                        <th>To</th> 
+                                        <th>Date</th> 
+                                        <th>Time</th> 
+                                        <th>Price</th> 
+                                    </tr> 
+                                </thead> 
+                                <tbody> 
+                                    <tr> 
+                                        <th scope="row">British Airways</th> 
+                                        <td>London Heathrow</td> 
+                                        <td>Scotland</td> 
+                                        <td>28-July-2017</td> 
+                                        <td>04:00</td> 
+                                        <td>£160</td> 
+                                    </tr> 
+                                    <tr> 
+                                        <th scope="row">British Airways</th> 
+                                        <td>London Heathrow</td> 
+                                        <td>Scotland</td> 
+                                        <td>28-July-2017</td> 
+                                        <td>05:30</td> 
+                                        <td>£200</td> 
+                                    </tr> 
+                                    <tr> 
+                                        <th scope="row">British Airways</th> 
+                                        <td>London Heathrow</td> 
+                                        <td>Scotland</td> 
+                                        <td>28-July-2017</td> 
+                                        <td>20:15</td>  
+                                        <td>£250</td>  
+                                    </tr> 
+                                </tbody> 
+                            </table>
+                            <!-- <div class="col-md-4" data-animate="fadeInUp">
                                 <div class="icon"><i class="fa fa-home"></i>
                                 </div>
                                 <h3 class="heading">Great home</h3>
@@ -194,10 +234,10 @@
                                 </div>
                                 <h3 class="heading">Free trial</h3>
                                 <p>Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. </p>
-                            </div>
+                            </div> -->
 
                         </div>
-                        <div class="row services">
+                        <!-- <div class="row services">
 
                             <div class="col-md-4" data-animate="fadeInUp">
                                 <div class="icon"><i class="fa fa-bullhorn"></i>
@@ -220,7 +260,7 @@
                                 <p>Quick, Baz, get my woven flax jodhpurs! "Now fax quiz Jack!" my brave ghost pled. </p>
                             </div>
 
-                        </div>
+                        </div> -->
 
                     </div>
                     <!-- /.12 -->
